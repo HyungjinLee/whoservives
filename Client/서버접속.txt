@@ -1,0 +1,91 @@
+ssh hjlee0235@163.180.146.68 -p 10003
+
+ nvidia-smi gpu 사용량 확인
+
+이미지 삭제
+docker rmi -f [이미지 id]
+
+scp -P 10003 C:\Users\user\Yolo_mark\x64\Release\data hjlee0235@163.180.146.68:/home 
+scp -P 10003 hjlee0235@163.180.146.68:darknet/data/ C:\Users\user\Desktop
+
+scp -P 10003 /c/Users/user/Yolo_mark/x64/Release/yolo-obj.cfg hjlee0235@163.180.146.68:/home
+
+scp -P 10003 C:\Users\user\Yolo_mark\x64\Release\ hjlee0235@163.180.146.68:darknet/data/
+
+docker container cp 컨테이너_이름:컨테이너_폴더나_파일_이름 호스트컴퓨터의_폴더
+
+docker cp /c/Users/user/Yolo_mark/x64/Release/yolo-obj.cfg make10cuda:/home/darknet/data/
+mysql ps 1234
+
+apache2
+php 5.6ls
+
+service apache2 start
+
+http://163.180.146.68/info.php
+
+ ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
+
+rm -rf folderName 폴더 안의 파일 모두 삭제
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=OFF -D WITH_IPP=OFF -D WITH_1394=OFF -D BUILD_WITH_DEBUG_INFO=OFF -D BUILD_DOCS=OFF -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D ENABLE_NEON=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.2.0/modules -D WITH_V4L=ON -D WITH_FFMPEG=ON -D WITH_XINE=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D PYTHON_INCLUDE_DIR=/usr/include/python2.7 -D PYTHON_INCLUDE_DIR2=/usr/include/x86_64-linux-gnu/python2.7 -D PYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so ../
+make -j
+sudo make installls
+
+docker run -v /c/Users/user/Yolo_mark/x64/Release/yolo-obj.cfg:/home/darknet -it xblaster/tensorflow-jupyter bash
+
+1. data folder 
+	scp -P 10003 -r C:\Users\user\Yolo_mark\x64\Release\data\train.txt hjlee0235@163.180.146.68:./
+	scp -P 10003 C:\Users\user\Yolo_mark\x64\Release\data\testimg.jpg hjlee0235@163.180.146.68:./data/
+	scp -P 10003 hjlee0235@163.180.146.68:./data/predictions.jpg C:\Users\user\Yolo_mark\x64\Release\data\ 
+	scp -P 10003 -r C:\Users\user\Yolo_mark\x64\Release\data\testimg hjlee0235@163.180.146.68:./
+	scp -P 10003 -r hjlee0235@163.180.146.68:./data/ C:\Users\user\Yolo_mark\x64\Release\data\testig3.jpg
+	scp -P 10003 -r hjlee0235@163.180.146.68:./weight/ C:\Users\user\Yolo_mark\x64\Release\data\
+
+2. cfg file
+	scp -P 10003 C:\Users\user\Yolo_mark\x64\Release\data\testimg2.jpg hjlee0235@163.180.146.68:./
+3. 컨테이너에 덮어쓰기
+
+	docker container cp img/ make10cuda:/home/darknet/data
+	docker container cp data/testimg.jpg make10cuda:/home/darknet/data
+	docker container cp data/img/ make10cuda:/home/darknet/data
+	docker container cp yolo-obj.cfg make10cuda:/home/darknet/data/
+	docker container cp testimg.jpg make10cuda:/home/darknet/data/
+	docker container cp make10cuda:/home/darknet/predictions.jpg data/
+	docker container cp make10cuda:/home/darknet/data/dog.jpg data/
+	docker container cp make10cuda:/home/darknet ./
+	
+
+docker start make10cuda; docker attach make10cuda
+
+학습
+
+./darknet detector train data/obj.data data/yolo-obj.cfg darknet53.conv.74
+
+detect
+
+./darknet detector test data/obj.data data/yolov3.cfg backup/yolov3_200.weights data/dog.jpg
+
+./darknet detector test data/obj.data data/yolo-obj.cfg backup/yolo-obj_600.weights data/testimg2.jpg
+
+./darknet detector test data/obj.data data/yolo-obj.cfg backup/yolo-obj_10000.weights data/testimg2.jpg
+
+
+./darknet detector test data/obj.data data/yolov3.cfg backup/yolov3_10000.weights data/testimg.jpg
+ 
+공백 제거
+:%s/^M$//g
+
+find ./ -name "*.txt" -exec sed -i 's/^M$//g' {} \;
+find -name "*.txt" -exec sed -i 's/^M//g'{} \;
+
+중간부터 계속 학습
+./darknet detector train data/obj.data data/yolo-obj.cfg backup/yolo-obj_10000.weights
+
+10, 100, 300, 500
+
+예를 들어서 php 소스코드로 mkdir 이라는 명령어를 사용하고 싶으시면?
+  1   <?php
+  2   system("mkdir /var/www/html/testFolder")
+  3   ?>
+

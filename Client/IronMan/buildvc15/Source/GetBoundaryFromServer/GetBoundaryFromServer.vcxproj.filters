@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer\GetBoundaryFromServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer\GetBoundaryFromServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{44AF6636-0323-36AA-87EB-9557AEA144B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A002F654-ADBC-3137-9284-B2453EE6249A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37B40942-23C6-3A75-A5C6-D97D34BE8045}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GetBoundaryFromServer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\MTES2.0\FMS\IronMan\DLL\vc15d\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GetBoundaryFromServer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GetBoundaryFromServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\MTES2.0\FMS\IronMan\DLL\vc15\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GetBoundaryFromServer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GetBoundaryFromServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GetBoundaryFromServer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">GetBoundaryFromServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GetBoundaryFromServer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GetBoundaryFromServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_calib3d345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_core345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_features2d345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_flann345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_highgui345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgcodecs345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgproc345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_ml345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_objdetect345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_photo345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_shape345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_stitching345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_superres345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_video345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videoio345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videostab345d.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\KSClass\Lib\KSClassd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Program Files (x86)/MTES2.0/FMS/IronMan/DLL/vc15d/GetBoundaryFromServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Program Files (x86)/MTES2.0/FMS/IronMan/DLL/vc15d/GetBoundaryFromServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_calib3d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_core345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_features2d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_flann345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_highgui345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgcodecs345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgproc345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_ml345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_objdetect345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_photo345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_shape345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_stitching345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_superres345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_video345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videoio345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videostab345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\KSClass\Lib\KSClass.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Program Files (x86)/MTES2.0/FMS/IronMan/DLL/vc15/GetBoundaryFromServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Program Files (x86)/MTES2.0/FMS/IronMan/DLL/vc15/GetBoundaryFromServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_calib3d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_core345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_features2d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_flann345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_highgui345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgcodecs345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgproc345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_ml345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_objdetect345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_photo345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_shape345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_stitching345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_superres345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_video345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videoio345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videostab345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\KSClass\Lib\KSClass.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Program Files (x86)/MTES2.0/FMS/IronMan/buildvc15/Source/GetBoundaryFromServer/MinSizeRel/GetBoundaryFromServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Program Files (x86)/MTES2.0/FMS/IronMan/buildvc15/Source/GetBoundaryFromServer/MinSizeRel/GetBoundaryFromServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";GetBoundaryFromServer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\MTES2.0\FMS\IronMan\buildvc15\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include\opencv;C:\MTEs-light\out\bin\Lib\OpenCv\include\opencv2;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\OpenCv\include;C:\Program Files (x86)\MTES2.0\FMS\IronMan\..\..\vc15\Lib\KSClass\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_calib3d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_core345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_features2d345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_flann345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_highgui345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgcodecs345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_imgproc345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_ml345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_objdetect345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_photo345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_shape345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_stitching345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_superres345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_video345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videoio345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\OpenCv\Lib\opencv_videostab345.lib;C:\Program Files (x86)\MTES2.0\vc15\Lib\KSClass\Lib\KSClass.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Program Files (x86)/MTES2.0/FMS/IronMan/buildvc15/Source/GetBoundaryFromServer/RelWithDebInfo/GetBoundaryFromServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Program Files (x86)/MTES2.0/FMS/IronMan/buildvc15/Source/GetBoundaryFromServer/RelWithDebInfo/GetBoundaryFromServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer\GetBoundaryFromServer.cpp" />
+    <ClInclude Include="C:\Program Files (x86)\MTES2.0\FMS\IronMan\Source\GetBoundaryFromServer\GetBoundaryFromServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
